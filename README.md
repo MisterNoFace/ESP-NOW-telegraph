@@ -1,10 +1,8 @@
 # ESP-NOW Telegraph
 A simple telegraph made with ESP-NOW protocol
-This telegraph works using two buttons: one represents 0, the other 1
-You send messages to the other device by typing a sequence in binary code of 4 bits
+This telegraph works using two buttons: one represents 0, the other 1. You send messages to the other device by typing a sequence in binary code of 4 bits.
 With a total of 16 combinations, the software associates the number typed to a letter of the alphabet:
-alphabet = "a b k d e f h y l m o r s t v x" (a simplified alphabet with 16 letters)
-The letters are associated with the numbers in the following way:
+"a b k d e f h y l m o r s t v x" (a simplified alphabet with 16 letters). The letters are associated with the numbers in the following way:
 - decimal --> binary --> letter
 - 0 --> 0000 --> a
 - 1 --> 0001 --> b/p
@@ -24,7 +22,7 @@ The letters are associated with the numbers in the following way:
 - 15 --> 1111 --> x/z
 
 ## Components Used
-This is the list of components i used for this demo:
+This is the list of components I used for this demo:
 - two ESP32 wroom with integrated wifi
 - two terminal adapters for the boards
 - buttons
@@ -33,4 +31,4 @@ This is the list of components i used for this demo:
 - a breadboard
 
 ## Flashing the code into the ESP32
-To get the ESP32 to run the code you have to use PlatformIO for VSCode. Install the extension and the import this project.
+To get the ESP32 to run the code you have to use PlatformIO for VSCode. Install the extension and then import this project.
